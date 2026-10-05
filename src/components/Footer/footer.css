@@ -1,7 +1,15 @@
-.footer
-{
-    padding: 1.6rem 1rem;
+.footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.5rem 0 2rem;
+    border-top: 1px solid var(--color-line);
+    color: var(--color-muted);
+    font-size: 0.78rem;
+}
+
+@media (max-width: 560px) {
+    .footer {
+        flex-direction: column;
+    }
 }

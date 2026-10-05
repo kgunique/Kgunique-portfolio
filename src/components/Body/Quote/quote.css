@@ -54,21 +54,10 @@ span{
 .nextsharebtn{
     padding: 10px;
 }
-button{
-    background: transparent;
-    padding: 5px;
+.quote button{
+    padding: 0.6rem 0.9rem;
     font-size: 20px;
     user-select: none;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-left: none;
-    border-top: none;
-    border-bottom: none;
-}
-button:hover{
-    border: 2px solid black;
-    border-left: none;
-    background-color: turquoise;
 }
 .nextquote{
     display: flex;

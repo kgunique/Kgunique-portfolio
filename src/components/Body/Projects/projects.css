@@ -1,5 +1,11 @@
-.projects{
+.projects {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    width: 100%;
+    padding-block: clamp(3rem, 5vw, 4.5rem);
+}
+
+.project_list {
+    display: grid;
+    gap: 1.15rem;
 }

@@ -2,15 +2,22 @@ import React from 'react'
 import './workcard.css'
 const WorkCard = ({ item }) => {
     return (
-        <div className="workcard">
-            <div className="work_info">
-                <label className="company_name">{item.company}</label>
-                <div className="work_desc">
-                    <p>{item.work}</p>
-                </div>
+        <article className="workcard">
+            <div className="workcard_top">
+                <span className="work_initials" aria-hidden="true">{item.company.slice(0, 1).toUpperCase()}</span>
+                <span className="work_type">{item.type}</span>
             </div>
-            <img src={item.companylogo} className="work_logo" alt= {item.company}/>
-        </div>
+            <div className="workcard_heading">
+                <div>
+                    <p className="work_title">{item.designation}</p>
+                    <h3 className="company_name">{item.company}</h3>
+                </div>
+                <p className="work_period">{item.period}</p>
+            </div>
+            <ul className="work_highlights">
+                {item.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
+            </ul>
+        </article>
     )
 }
 

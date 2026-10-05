@@ -1,14 +1,12 @@
 import React from 'react'
 import './skills.css'
-import Seperator from '../../common/seperator/Seperator'
 import { MySkills } from '../../Data/MySkills';
 import Skillcard from './Skillcard';
 const Skills = () => {
     const skill = MySkills;
     return (
-        <div className="skills" id="skills">
-            <Seperator />
-            <div className="section_title">Skills</div>
+        <div className="skills">
+            <h2 className="section_title" id="skills-title">Skills</h2>
             <div className="skills_container">
                 {
                     skill.map((eachskill)=>{
@@ -19,7 +17,7 @@ const Skills = () => {
                                     {
                                         eachskill.list.map((skillcard)=>{
                                                 return(
-                                                    <Skillcard skillcard={skillcard} />
+                                                    <Skillcard skillcard={skillcard} key={skillcard.name} />
                                                 )
                                         })
                                     }

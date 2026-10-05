@@ -1,17 +1,78 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: 'Space Grotesk', sans-serif;
+:root {
+  font-family: 'Inter', 'Space Grotesk', sans-serif;
+  color: #172033;
+  background: #f7f8fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --color-ink: #172033;
+  --color-muted: #647089;
+  --color-accent: #6254e8;
+  --color-accent-dark: #4e42c5;
+  --color-surface: #ffffff;
+  --color-line: #e5e8f0;
+  --shadow-card: 0 18px 48px rgb(30 41 71 / 8%);
+  --shadow-raised: 0 5px 12px rgb(30 41 71 / 9%), 0 1px 2px rgb(30 41 71 / 6%), inset 0 1px 0 rgb(255 255 255 / 95%);
+  --shadow-raised-hover: 0 9px 18px rgb(30 41 71 / 12%), 0 2px 4px rgb(30 41 71 / 7%), inset 0 1px 0 rgb(255 255 255 / 95%);
+  --shadow-pressed: inset 0 2px 5px rgb(30 41 71 / 12%), inset 0 1px 0 rgb(30 41 71 / 3%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 12% 0%, rgb(98 84 232 / 7%), transparent 27rem),
+    #f7f8fc;
+  color: var(--color-ink);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+body,
+button,
+a {
+  font-family: 'Inter', 'Space Grotesk', sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #a49cf7;
+  outline-offset: 4px;
+}
+
+::selection {
+  background: #dcd8ff;
+  color: #211a68;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

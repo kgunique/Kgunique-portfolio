@@ -5,36 +5,26 @@ import Projects from './Projects/Projects'
 import Skills from './Skills/Skills'
 import Work from './Work/Work'
 import Contact from './Contact/Contact'
-import Quote from './Quote/Quote'
-import Slider from './Slider/Slider'
 
 const Body = () => {
     return (
-        <>
-        <div className="body">
-            <section id = "#about">
+        <main className="body">
+            <section id="about" aria-labelledby="hero-title">
                 <About />
             </section>
-            <section id="#quote">
-                <Quote />
-            </section>
-            <section id="#slider">
-                <Slider />
-            </section>
-            <section id = "#projects">
+            <section id="projects" aria-labelledby="projects-title">
                 <Projects />
             </section>
-            <section id = "#skills">
+            <section id="experience" aria-labelledby="experience-title">
+                <Work />
+            </section>
+            <section id="skills" aria-labelledby="skills-title">
                 <Skills />
             </section>
-            <section id = "#work">
-                <Work/>
-            </section>
-            <section id = "#contact">
+            <section id="contact" aria-labelledby="contact-title">
                 <Contact />
             </section>
-        </div>
-        </>
+        </main>
     )
 }
 

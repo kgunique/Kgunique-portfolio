@@ -1,31 +1,105 @@
-.workcard{
-    padding: 0.8rem;
-    width: 40%;
-    margin-top: 1.6rem;
+.workcard {
+    padding: 1.25rem;
+    border: 2px solid #171717;
+    border-radius: 0.75rem;
+    background: #e8e6ff;
+    box-shadow: 5px 5px 0 #171717;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.workcard:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0 #171717;
+}
+
+.workcard:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 #171717;
+}
+
+.workcard_top {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: 0.7rem;
 }
-.work_logo{
-    height: 5rem;
+
+.work_initials {
+    display: grid;
+    width: 2.8rem;
+    height: 2.8rem;
+    place-items: center;
+    border: 2px solid #171717;
+    border-radius: 0.55rem;
+    background: #fff;
+    color: var(--color-accent-dark);
+    font-size: 1.15rem;
+    font-weight: 750;
 }
-.work_info{
+
+.work_type {
+    padding: 0.3rem 0.6rem;
+    border: 2px solid #171717;
+    border-radius: 0.4rem;
+    background: #fff;
+    color: #302b68;
+    font-size: 0.68rem;
+    font-weight: 750;
+}
+
+.workcard_heading {
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
 }
-.company_name{
-    font-size: 1.3rem;
-    font-weight: 300;
-    margin:0.5rem 0;
+
+.work_title {
+    margin: 0.85rem 0 0.15rem;
+    color: #4e42c5;
+    font-size: 0.78rem;
+    font-weight: 700;
 }
-.work_desc{
-    font-size: 1rem;
-    color: gray;
-    font-weight: 200;
+
+.company_name {
+    margin: 0;
+    color: var(--color-ink);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
 }
-@media only screen and (max-width:700px){
-    .workcard{
-        width: 100%;
+
+.work_period {
+    flex: 0 0 auto;
+    margin: 0.95rem 0 0;
+    color: #302b68;
+    font-size: 0.75rem;
+    font-weight: 750;
+    text-align: right;
+}
+
+.work_highlights {
+    display: grid;
+    gap: 0.55rem;
+    margin: 0.85rem 0 0;
+    padding-left: 1.1rem;
+    color: #424158;
+    font-size: 0.84rem;
+    line-height: 1.55;
+}
+
+.work_highlights li::marker {
+    color: #4e42c5;
+}
+
+@media (max-width: 520px) {
+    .workcard_heading {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .work_period {
+        margin-top: 0.35rem;
+        text-align: left;
     }
 }

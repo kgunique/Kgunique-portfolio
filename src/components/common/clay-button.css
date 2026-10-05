@@ -1,0 +1,62 @@
+.clay-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    border: 1px solid #e1e0f0;
+    border-radius: 0.95rem;
+    background: linear-gradient(145deg, #fff, #e9e8f5);
+    color: #302b68;
+    box-shadow: 5px 5px 12px rgb(54 49 104 / 14%), -4px -4px 10px rgb(255 255 255 / 88%), inset 0 1px 2px rgb(255 255 255 / 75%);
+    text-decoration: none;
+    transition: transform 160ms ease, color 160ms ease, border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.clay-button:hover,
+.clay-button.is-active {
+    transform: translateY(-2px);
+    border-color: #d4d0fb;
+    background: linear-gradient(145deg, #fff, #e4e1ff);
+    color: #4e42c5;
+    box-shadow: 7px 7px 15px rgb(54 49 104 / 17%), -5px -5px 12px rgb(255 255 255 / 92%), inset 0 1px 2px rgb(255 255 255 / 75%);
+}
+
+.clay-button:active {
+    transform: translateY(1px);
+    box-shadow: inset 3px 3px 7px rgb(54 49 104 / 16%), inset -3px -3px 7px rgb(255 255 255 / 80%);
+}
+
+.clay-button--primary {
+    border-color: #7469e9;
+    background: linear-gradient(145deg, #786df0, #594bd2);
+    color: #fff;
+    box-shadow: 5px 5px 12px rgb(72 60 174 / 28%), -4px -4px 10px rgb(255 255 255 / 45%), inset 0 1px 2px rgb(255 255 255 / 28%);
+}
+
+.clay-button--primary:hover,
+.clay-button--primary.is-active {
+    border-color: #7469e9;
+    background: linear-gradient(145deg, #8278f5, #6255df);
+    color: #fff;
+    box-shadow: 7px 7px 15px rgb(72 60 174 / 32%), -5px -5px 12px rgb(255 255 255 / 50%), inset 0 1px 2px rgb(255 255 255 / 32%);
+}
+
+.clay-button--primary:active {
+    box-shadow: inset 3px 3px 7px rgb(47 38 130 / 30%), inset -3px -3px 7px rgb(255 255 255 / 25%);
+}
+
+.clay-button--icon {
+    width: 2.65rem;
+    height: 2.65rem;
+    padding: 0;
+    border-radius: 0.9rem;
+}
+
+.clay-button--pill {
+    border-radius: 999px;
+}
+
+.clay-button:focus-visible {
+    outline: 3px solid #a49cf7;
+    outline-offset: 3px;
+}

@@ -6,16 +6,16 @@ import './projects.css'
 const Projects = () => {
     const MyProjects = ProjectData
     return (
-        <div className="projects" id="projects">
-            <Seperator/>
-            <label className="section_title">My Projects</label>
-            <div>{
+        <div className="projects">
+            <h2 className="section_title" id="projects-title">My Projects</h2>
+            <br/>
+            <div className="project_list">{
                 MyProjects.map((project)=>{
                     return(
-                        <div className="project" key={project.id}><ProData project={project}/></div>
+                        <ProData project={project} key={project.id}/>
                     )
                 })
-            }
+                }
             </div>
         </div>
     )

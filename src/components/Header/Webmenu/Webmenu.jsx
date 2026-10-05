@@ -1,36 +1,25 @@
-import React from 'react'
 import './webmenu.css';
-import {Work,EmojiObjects,Laptop,ContactPhone,FormatQuote} from '@material-ui/icons';
 
-const Webmenu = () => {
+const Webmenu = ({ activeSection, setActiveSection }) => {
+    const links = [
+        { href: '#projects', label: 'Selected work', section: 'projects' },
+        { href: '#experience', label: 'Experience', section: 'experience' },
+        { href: '#skills', label: 'Skills', section: 'skills' },
+    ]
+
     return (
         <div className="webmenucontainer">
-            <div className="weboption">
-                <a href="#projects">
-                    <Work className="muicons"/>
-                    Projects
+            {links.map(({ href, label, section }) => (
+                <a
+                    href={href}
+                    key={section}
+                    className={`clay-button clay-button--pill${activeSection === section ? ' is-active' : ''}`}
+                    aria-current={activeSection === section ? 'location' : undefined}
+                    onClick={() => setActiveSection(section)}
+                >
+                    {label}
                 </a>
-            </div>
-            <div className="weboption">
-                <a href="#skills">
-                    <EmojiObjects className="muicons"/>Skills
-                </a>
-            </div>
-            <div className="weboption">
-                <a href="#work">
-                   <Laptop className ="muicons"/> Work
-                </a>
-            </div>
-            <div className="weboption">
-                <a href="#contact">
-                    <ContactPhone className= "muicons"/>Contact
-                </a>
-            </div>
-            <div className="weboption">
-                <a href="#quote">
-                    <FormatQuote className= "muicons"/>Quote
-                </a>
-            </div>
+            ))}
         </div>
     )
 }

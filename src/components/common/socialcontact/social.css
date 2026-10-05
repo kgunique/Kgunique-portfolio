@@ -1,26 +1,26 @@
-.social_contact{
+.social_contact {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 0.65rem;
 }
-.social_container{
-    padding: 0.6rem;
-    margin: 0.6rem;
-    cursor: pointer;
+
+.social_contact a {
+    display: grid;
+    place-items: center;
 }
-.socialicon{
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
+
+.social_container {
+    display: grid;
+    place-items: center;
 }
-@media only screen and (max-width:720px){
-    .social_container{
-        margin-top: 3rem;
-        padding: 0.3rem;
-    }
-    .socialicon{
-        height: 2rem;
-        width: 2rem;
-        border-radius: 50%;
-    }
+
+.socialicon {
+    width: 1.1rem;
+    height: 1.1rem;
+    object-fit: contain;
+}
+
+.social_contact a:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
 }

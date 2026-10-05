@@ -48,7 +48,7 @@ const Quote = () => {
                     <button className="twittershare">Share on Twitter</button>
                 </div> */}
                 <div className="nextsharebtn">
-                <button onClick = {handleClick} className="nextquote">Next<DoubleArrow/></button>
+                <button onClick = {handleClick} className="nextquote clay-button">Next<DoubleArrow/></button>
                 </div>
             </div>
            
