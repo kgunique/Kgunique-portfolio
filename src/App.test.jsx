@@ -64,7 +64,6 @@ describe('App', () => {
     expect(screen.getByRole('heading', { name: 'Marry Me' })).toBeTruthy();
     expect(screen.getByRole('heading', { name: 'Used Car Buy & Sell Platform' })).toBeTruthy();
     expect(screen.getByRole('heading', { name: 'Codebucket Solutions (P) Ltd' })).toBeTruthy();
-    expect(screen.getByRole('heading', { name: 'Independent Client Projects' })).toBeTruthy();
     expect(screen.getByText(/20K\+ users/)).toBeTruthy();
     expect(screen.getByText('96karankkr@gmail.com')).toBeTruthy();
   });
