@@ -2,6 +2,7 @@ export const WorkDT = [
     {
         id: "codebucket",
         company: "Codebucket Solutions (P) Ltd",
+        logo: "https://codebuckets.in/_next/image?url=https%3A%2F%2Fprod-1.static.codebuckets.in%2Ffile%2Fcodebucket-production-public%2Fcodebucket-official-website%2FLogoWhite.webp&w=256&q=75",
         designation: "Software Development Engineer II",
         period: "May 2022 – Present",
         type: "Full-time",
@@ -16,6 +17,7 @@ export const WorkDT = [
     {
         id: "zplay",
         company: "Zplay Solution Pvt Ltd",
+        logo: "https://www.zpaysolutions.com/img/logo.png",
         designation: "Associate Developer",
         period: "2020 – Apr 2022",
         type: "Full-time",

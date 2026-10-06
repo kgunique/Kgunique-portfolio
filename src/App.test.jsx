@@ -64,6 +64,8 @@ describe('App', () => {
     expect(screen.getByRole('heading', { name: 'Marry Me' })).toBeTruthy();
     expect(screen.getByRole('heading', { name: 'Used Car Buy & Sell Platform' })).toBeTruthy();
     expect(screen.getByRole('heading', { name: 'Codebucket Solutions (P) Ltd' })).toBeTruthy();
+    expect(document.querySelector('.work_logo[src^="https://codebuckets.in/"]')).toBeTruthy();
+    expect(document.querySelector('.work_logo[src="https://www.zpaysolutions.com/img/logo.png"]')).toBeTruthy();
     expect(screen.getByText(/20K\+ users/)).toBeTruthy();
     expect(screen.getByText('96karankkr@gmail.com')).toBeTruthy();
   });

@@ -4,7 +4,9 @@ const WorkCard = ({ item }) => {
     return (
         <article className="workcard">
             <div className="workcard_top">
-                <span className="work_initials" aria-hidden="true">{item.company.slice(0, 1).toUpperCase()}</span>
+                {item.logo
+                    ? <img className="work_logo" src={item.logo} alt="" />
+                    : <span className="work_initials" aria-hidden="true">{item.company.slice(0, 1).toUpperCase()}</span>}
                 <span className="work_type">{item.type}</span>
             </div>
             <div className="workcard_heading">
