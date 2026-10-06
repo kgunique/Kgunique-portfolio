@@ -17,6 +17,7 @@ export const ProjectData = [
         id: "marry-me",
         category: "Digital wedding invitations",
         title: "Marry Me",
+        demo: "https://getinvites.netlify.app/",
         description: "A platform for creating interactive, animated wedding invitation websites with customizable themed templates.",
         tags: ["React.js", "Next.js", "Tailwind CSS"],
         highlights: [
